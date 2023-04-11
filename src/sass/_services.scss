@@ -1,0 +1,101 @@
+.services {
+  width: 100vw;
+  height: 100vh;
+  background: radial-gradient(50% 158.02% at 50% 50%, #1f1f1f 0%, #000000 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  scroll-snap-align: start;
+
+  h1.services-heading {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 6rem;
+
+    /* identical to box height */
+
+    color: #ffffff;
+  }
+
+  p.services-description {
+    text-align: center;
+    width: 2495px;
+    height: 42px;
+    left: -1%;
+    top: 5%;
+    margin: 5rem 0;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 100;
+    font-size: 3rem;
+
+    color: #dcdcdc;
+  }
+
+  .services-bottom {
+    width: fit-content;
+    overflow-x: hidden;
+    margin: 0 auto;
+    display: flex;
+
+    .service-div {
+      width: 50rem;
+      height: 30rem;
+      margin: 5rem;
+      background: linear-gradient(90deg, #072594 1.13%, #002ac7 100%);
+      box-shadow: 12px 11px 5px #0022a0;
+      border-radius: 30px;
+      position: relative;
+
+      .service-div-container {
+        width: 80%;
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin: 0 auto;
+
+        i {
+          font-size: 3rem;
+          color: white;
+        }
+
+        h1.servide-div-top-header {
+          font-family: "Plus Jakarta Sans";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 2.4rem;
+          color: #ffffff;
+        }
+        .services-div-description {
+          font-family: "Roboto Mono";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 1.5rem;
+          color: #ffffff;
+        }
+
+        .service-div-bottom {
+          button.service-button {
+            outline: 0px;
+            border: 0px;
+
+            background: #ffffff;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 20px;
+            font-family: "Karla";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 1.2rem;
+            padding: 1rem 5rem;
+            /* identical to box height */
+
+            color: #000000;
+          }
+        }
+      }
+    }
+  }
+}

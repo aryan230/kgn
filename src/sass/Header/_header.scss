@@ -1,0 +1,91 @@
+header {
+  width: 100vw;
+  height: 20vh;
+  background-color: transparent;
+
+  .header-content {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .header-left {
+      width: 40%;
+      img {
+        width: 8rem;
+      }
+    }
+
+    nav {
+      width: 60%;
+      .header-responsive {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        display: none;
+        @media only screen and (max-width: 900px) {
+          display: flex;
+        }
+
+        svg {
+          width: 6rem;
+          height: auto;
+          color: white;
+        }
+
+        .header-ul-responsive {
+          display: none;
+        }
+      }
+      ul.header-ul {
+        list-style: none;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @media only screen and (max-width: 900px) {
+          display: none;
+        }
+
+        li a.header-element {
+          text-decoration: none;
+          font-family: "Karla";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 1.6rem;
+
+          /* identical to box height */
+
+          color: #ffffff;
+        }
+
+        button.header-button {
+          outline: 0px;
+          border: 0px;
+          background: #072595;
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          border-radius: 20px;
+          font-family: "Karla";
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 1.6rem;
+          padding: 0.8rem 5rem;
+          /* identical to box height */
+
+          color: #ffffff;
+        }
+
+        .header-button i {
+          margin: 10px;
+        }
+      }
+    }
+  }
+}
